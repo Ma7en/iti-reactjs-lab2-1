@@ -1,0 +1,55 @@
+.bio {
+    .container {
+        padding-block: 50px;
+
+        .content {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .title {
+                flex-basis: 30%;
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 40px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .down {
+                flex-basis: 65%;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 30px;
+                p {
+                    text-align: left;
+                    font-size: 20px;
+                    color: gray;
+                }
+                a {
+                    // #3d3d3d
+                    display: inline-block;
+                    color: #fff;
+                    background-color: #3d3d3d;
+                    padding: 20px 20px;
+                    border: 2px solid #eee;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    transition: var(--main-transition);
+                }
+            }
+            @media (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+                .down {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

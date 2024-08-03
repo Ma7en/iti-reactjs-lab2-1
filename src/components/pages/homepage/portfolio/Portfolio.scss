@@ -1,0 +1,58 @@
+.portfolio {
+    margin-bottom: 50px;
+    .container {
+        padding-block: 50px;
+        .title {
+            text-align: left;
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 40px;
+                text-transform: capitalize;
+            }
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 30px;
+
+            .port {
+                // #959188
+                // #404040
+                &:nth-child(odd) {
+                    background-color: #959188;
+                }
+                &:nth-child(even) {
+                    background-color: #404040;
+                }
+                border-radius: 4px;
+                color: #fff;
+
+                .info {
+                    padding: 80px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        width: fit-content;
+                    }
+                }
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    .info h3 {
+                        border-bottom: 2px solid #fff;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

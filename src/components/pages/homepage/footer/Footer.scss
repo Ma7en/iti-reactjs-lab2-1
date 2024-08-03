@@ -1,0 +1,92 @@
+.footer {
+    background-color: #3d3d3d;
+    color: #fff;
+
+    .container {
+        padding-block: 50px;
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            .title {
+                text-align: left;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 45px;
+                    text-transform: capitalize;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        svg {
+                        }
+
+                        a {
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                a {
+                    display: inline-block;
+                    color: #fff;
+                    padding: 20px 20px;
+                    border: 2px solid #eee;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .social {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+                    li {
+                        a {
+                            font-size: 25px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                }
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                // > div {
+                //     width: 100%;
+                // }
+                .title {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    h4 {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

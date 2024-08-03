@@ -1,0 +1,48 @@
+.hero {
+    height: 100vh;
+    background: url("https://images8.alphacoders.com/132/1325725.png");
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        .content {
+            color: #fff;
+            text-align: center;
+
+            h1 {
+                font-size: 45px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            p {
+                margin-bottom: 50px;
+                font-size: 30px;
+                text-transform: capitalize;
+            }
+
+            a {
+                display: inline-block;
+                color: #fff;
+                padding: 20px 20px;
+                border: 2px solid #eee;
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: capitalize;
+                transition: var(--main-transition);
+                position: relative;
+                z-index: 2;
+
+                &:hover {
+                    border-top-right-radius: 16px;
+                    border-bottom-left-radius: 16px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                text-align: left;
+            }
+        }
+    }
+}
